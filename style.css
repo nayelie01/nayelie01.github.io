@@ -1,0 +1,40 @@
+h1 {
+  font-size: 50px
+  text-align: center;
+  color: black;
+}
+
+/* h3 {
+  background-color: #d8d1c7;
+} */
+
+body {
+  background-color: #edcfdb;
+  text-align: center;
+}
+
+html {
+  font-family: 'Courgette', cursive;
+}
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+button {
+  background-color: #edcfdb;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Courgette', cursive;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
