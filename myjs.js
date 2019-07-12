@@ -2,15 +2,15 @@ alert("Welcome to my website");
 
 var view;
 var map;
-var intialLocation;
+var initialLocation;
 var london;
 
 function init() {
-  intialLocation = ol.proj.fromLonLat([41.043316, 28.862457]);
+  initialLocation = ol.proj.fromLonLat([41.043316, 28.862457]);
   london = ol.proj.fromLonLat([-0.12755, 51.507222]);
 
   view = new ol.View({
-    center: intialLocation,
+    center: initialLocation,
     zoom: 6
   });
 
@@ -31,5 +31,7 @@ function panLondon() {
   view.animate({
     center: london,
     duration: 2000
-  });
+  })
 }
+
+window.onload = init;
