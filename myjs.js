@@ -1,3 +1,5 @@
+alert("Welcome to my website");
+
 var view;
 var map;
 var intialLocation;
