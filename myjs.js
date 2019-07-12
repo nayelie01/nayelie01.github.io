@@ -13,6 +13,7 @@ function init() {
     center: intialLocation,
     zoom: 6
   });
+  
 
   map = new ol.Map({
     target: 'map',
