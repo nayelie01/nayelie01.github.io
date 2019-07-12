@@ -18,7 +18,7 @@ function init() {
   map = new ol.Map({
     target: 'map',
     layers: [
-      new ol.layer.Title({
+      new ol.layer.Tile({
         source: new ol.source.OSM()
       })
     ],
