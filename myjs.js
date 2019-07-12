@@ -26,7 +26,7 @@ function init() {
   });
 }
 
-function panHome() {
+function panLondon() {
   view.animate({
     center: london,
     duration: 2000
