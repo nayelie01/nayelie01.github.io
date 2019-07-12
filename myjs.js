@@ -1,5 +1,3 @@
-alert("Welcome to my website");
-
 var view;
 var map;
 var intialLocation;
@@ -13,7 +11,7 @@ function init() {
     center: intialLocation,
     zoom: 6
   });
-  
+
 
   map = new ol.Map({
     target: 'map',
