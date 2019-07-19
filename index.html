@@ -7,6 +7,9 @@
     <link rel= "stylesheet" href="style.css">
     <script src="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.3.0/build/ol.js"></script>
     <title>OpenLayers example</title>
+    <title>View Animation</title>
+    <link rel="stylesheet" href="https://openlayers.org/en/v5.3.0/css/ol.css" type="text/css">
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
     <script src="myjs.js"></script>
   </head>
 
@@ -58,10 +61,28 @@
 
     <div id="map" class="map"></div>
 
-  
 
-    <button onclick="panLondon()">Pan back to london </button>
+    <button id="rotate-left" title="Rotate clockwise">↻</button>
+    <button id="rotate-right" title="Rotate counterclockwise">↺</button>
+    <button onClick="panLondon()">Pan back to london </button>
 
+    <script>
+      // import TileLayer from 'ol/layer/Tile.js';
+      // import {fromLonLat} from 'ol/proj.js';
+      // import OSM from 'ol/source/OSM.js';
+
+      onClick('rotate-left', function() {
+        view.animate({
+          rotation: view.getRotation() + Math.PI / 2
+        });
+      });
+
+      onClick('rotate-right', function() {
+        view.animate({
+          rotation: view.getRotation() - Math.PI / 2
+        });
+      }
+      </script>
     <!-- <div id="map" class="map"></div> -->
   </body>
 </html>
